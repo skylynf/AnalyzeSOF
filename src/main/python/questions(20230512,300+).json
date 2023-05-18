@@ -1,0 +1,738 @@
+[
+    {
+        "tags": [
+            "java",
+            "garbage-collection"
+        ],
+        "owner": {
+            "account_id": 400169,
+            "reputation": 6106,
+            "user_id": 766006,
+            "user_type": "registered",
+            "accept_rate": 74,
+            "profile_image": "https://www.gravatar.com/avatar/edb81b3de4207c338cfb6457544308d9?s=256&d=identicon&r=PG",
+            "display_name": "sternr",
+            "link": "https://stackoverflow.com/users/766006/sternr"
+        },
+        "is_answered": true,
+        "view_count": 17,
+        "accepted_answer_id": 76234192,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1683877759,
+        "creation_date": 1683869164,
+        "question_id": 76233361,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76233361/threadmxbean-getcurrentthreadallocatedbytes-java-8-alternative",
+        "title": "ThreadMXBean.getCurrentThreadAllocatedBytes Java 8 alternative?"
+    },
+    {
+        "tags": [
+            "java",
+            "maven",
+            "unit-testing"
+        ],
+        "owner": {
+            "account_id": 198567,
+            "reputation": 687,
+            "user_id": 443309,
+            "user_type": "registered",
+            "accept_rate": 25,
+            "profile_image": "https://www.gravatar.com/avatar/48ad7ebd1b2dde9a19e5f60dba125a40?s=256&d=identicon&r=PG&f=y&so-version=2",
+            "display_name": "gkns",
+            "link": "https://stackoverflow.com/users/443309/gkns"
+        },
+        "is_answered": true,
+        "view_count": 27,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1683877700,
+        "creation_date": 1683869429,
+        "question_id": 76233381,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76233381/is-there-a-maven-plugin-to-analyze-the-project-dependencies-before-running-unit",
+        "title": "Is there a maven plugin to analyze the project dependencies before running unit tests?"
+    },
+    {
+        "tags": [
+            "java"
+        ],
+        "owner": {
+            "account_id": 27326037,
+            "reputation": 1,
+            "user_id": 20839003,
+            "user_type": "registered",
+            "profile_image": "https://lh3.googleusercontent.com/a/AEdFTp77gS7Owm7x8MYm3Ip2TznvzFMXPtCdsxK1S4M6=k-s256",
+            "display_name": "jasmi",
+            "link": "https://stackoverflow.com/users/20839003/jasmi"
+        },
+        "is_answered": false,
+        "view_count": 37,
+        "closed_date": 1683980188,
+        "answer_count": 0,
+        "score": -2,
+        "last_activity_date": 1683877454,
+        "creation_date": 1683877454,
+        "question_id": 76234159,
+        "link": "https://stackoverflow.com/questions/76234159/files-running-manually-gives-result-but-files-from-jar-throws-error",
+        "closed_reason": "Needs details or clarity",
+        "title": "files running manually gives result but files from jar throws error"
+    },
+    {
+        "tags": [
+            "java",
+            "json",
+            "spring-boot",
+            "inheritance",
+            "json-deserialization"
+        ],
+        "owner": {
+            "account_id": 18515353,
+            "reputation": 1,
+            "user_id": 13489609,
+            "user_type": "registered",
+            "profile_image": "https://lh3.googleusercontent.com/a-/AOh14GhFm4G04uBhGK54-EFn77fjJMq2p4_sQ132tdHx=k-s256",
+            "display_name": "Mayank Vashishtha",
+            "link": "https://stackoverflow.com/users/13489609/mayank-vashishtha"
+        },
+        "is_answered": false,
+        "view_count": 14,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1683876594,
+        "creation_date": 1683876594,
+        "question_id": 76234062,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76234062/send-child-classs-property-with-parent-classs-property-in-responseentity-in-sp",
+        "title": "Send child class&#39;s property with parent class&#39;s property in ResponseEntity in Spring Boot"
+    },
+    {
+        "tags": [
+            "java",
+            "android",
+            "translation"
+        ],
+        "owner": {
+            "account_id": 28131984,
+            "reputation": 1,
+            "user_id": 21496359,
+            "user_type": "registered",
+            "profile_image": "https://lh3.googleusercontent.com/a/AGNmyxZZHXLOm2xnw-5TbGGvOOory0WgSPNUDfuLI4Xq=k-s256",
+            "display_name": "Gu Ro",
+            "link": "https://stackoverflow.com/users/21496359/gu-ro"
+        },
+        "is_answered": false,
+        "view_count": 37,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1683876395,
+        "creation_date": 1683874459,
+        "last_edit_date": 1683875436,
+        "question_id": 76233816,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76233816/string-is-not-translating-to-a-different-language-in-android-studio-java",
+        "title": "String is not translating to a different language in Android Studio Java?"
+    },
+    {
+        "tags": [
+            "java"
+        ],
+        "owner": {
+            "account_id": 1859171,
+            "reputation": 3445,
+            "user_id": 1684123,
+            "user_type": "registered",
+            "accept_rate": 48,
+            "profile_image": "https://www.gravatar.com/avatar/6399bc3feeb74feb14fcbd8088bfc87a?s=256&d=identicon&r=PG",
+            "display_name": "Kifsif",
+            "link": "https://stackoverflow.com/users/1684123/kifsif"
+        },
+        "is_answered": false,
+        "view_count": 30,
+        "closed_date": 1683877334,
+        "answer_count": 0,
+        "score": -1,
+        "last_activity_date": 1683875068,
+        "creation_date": 1683875068,
+        "question_id": 76233879,
+        "link": "https://stackoverflow.com/questions/76233879/should-getters-and-setters-be-considered-as-words-for-beans-only",
+        "closed_reason": "Opinion-based",
+        "title": "Should getters and setters be considered as words for beans only?"
+    },
+    {
+        "tags": [
+            "java",
+            "eclipse",
+            "jpa",
+            "logging",
+            "console"
+        ],
+        "owner": {
+            "account_id": 10272083,
+            "reputation": 1,
+            "user_id": 7634419,
+            "user_type": "registered",
+            "profile_image": "https://i.stack.imgur.com/LnMT2.jpg?s=256&g=1",
+            "display_name": "Vikas Kapadiya",
+            "link": "https://stackoverflow.com/users/7634419/vikas-kapadiya"
+        },
+        "is_answered": false,
+        "view_count": 15,
+        "answer_count": 0,
+        "score": -2,
+        "last_activity_date": 1683874832,
+        "creation_date": 1683874832,
+        "question_id": 76233854,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76233854/how-can-stop-displaying-jpa-log-message-on-the-console",
+        "title": "How can stop displaying JPA log message on the console?"
+    },
+    {
+        "tags": [
+            "java",
+            "spring-boot",
+            "amazon-sqs"
+        ],
+        "owner": {
+            "account_id": 20121879,
+            "reputation": 1,
+            "user_id": 14756230,
+            "user_type": "registered",
+            "profile_image": "https://www.gravatar.com/avatar/2ded1db48f1f582b5c7c1f22cc8e3c09?s=256&d=identicon&r=PG&f=y&so-version=2",
+            "display_name": "Chanchal Kuckmar",
+            "link": "https://stackoverflow.com/users/14756230/chanchal-kuckmar"
+        },
+        "is_answered": false,
+        "view_count": 14,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1683873881,
+        "creation_date": 1683873881,
+        "question_id": 76233748,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76233748/unable-to-read-messages-from-sqs-through-springboot-application",
+        "title": "Unable to read messages from SQS through Springboot application"
+    },
+    {
+        "tags": [
+            "java"
+        ],
+        "owner": {
+            "account_id": 1859171,
+            "reputation": 3445,
+            "user_id": 1684123,
+            "user_type": "registered",
+            "accept_rate": 48,
+            "profile_image": "https://www.gravatar.com/avatar/6399bc3feeb74feb14fcbd8088bfc87a?s=256&d=identicon&r=PG",
+            "display_name": "Kifsif",
+            "link": "https://stackoverflow.com/users/1684123/kifsif"
+        },
+        "is_answered": true,
+        "view_count": 46,
+        "accepted_answer_id": 76233542,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1683873011,
+        "creation_date": 1683869511,
+        "question_id": 76233387,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76233387/javascript-as-illustration-of-java-beans",
+        "title": "Javascript as illustration of Java beans"
+    },
+    {
+        "tags": [
+            "java",
+            "spring",
+            "properties",
+            "configuration"
+        ],
+        "owner": {
+            "account_id": 3020730,
+            "reputation": 179,
+            "user_id": 2561849,
+            "user_type": "registered",
+            "accept_rate": 33,
+            "profile_image": "https://graph.facebook.com/100005851511274/picture?type=large",
+            "display_name": "Jens-Konrad Preem",
+            "link": "https://stackoverflow.com/users/2561849/jens-konrad-preem"
+        },
+        "is_answered": false,
+        "view_count": 10,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1683872459,
+        "creation_date": 1683872459,
+        "question_id": 76233610,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76233610/using-configurationproperties-to-fill-a-map-of-all-properties",
+        "title": "Using configurationProperties to fill a map of all properties"
+    },
+    {
+        "tags": [
+            "java",
+            "sorting",
+            "bucket-sort"
+        ],
+        "owner": {
+            "account_id": 19767913,
+            "reputation": 1,
+            "user_id": 14475472,
+            "user_type": "registered",
+            "profile_image": "https://lh3.googleusercontent.com/a-/AOh14Gh-bF1zZmozT5N5YKc-_ha9TvZUEL8fGp0pnt0VUA=k-s256",
+            "display_name": "Maximus Duke",
+            "link": "https://stackoverflow.com/users/14475472/maximus-duke"
+        },
+        "is_answered": false,
+        "view_count": 32,
+        "closed_date": 1683868264,
+        "answer_count": 0,
+        "score": -6,
+        "last_activity_date": 1683869927,
+        "creation_date": 1683868222,
+        "last_edit_date": 1683869927,
+        "question_id": 76233290,
+        "link": "https://stackoverflow.com/questions/76233290/why-do-we-add-1-in-freq-countmap-getordefaultnumsi-01",
+        "closed_reason": "Needs details or clarity",
+        "title": "Why do we add 1 in freq = countMap.getOrDefault(nums[i],0)+1;?"
+    },
+    {
+        "tags": [
+            "java",
+            "mysql",
+            "tomcat",
+            "java-8",
+            "tomcat9"
+        ],
+        "owner": {
+            "account_id": 28553644,
+            "reputation": 19,
+            "user_id": 21858148,
+            "user_type": "registered",
+            "profile_image": "https://www.gravatar.com/avatar/707d0034ab5678bad0248043e3faea4a?s=256&d=identicon&r=PG&f=y&so-version=2",
+            "display_name": "Ankit",
+            "link": "https://stackoverflow.com/users/21858148/ankit"
+        },
+        "is_answered": false,
+        "view_count": 36,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1683869325,
+        "creation_date": 1683865419,
+        "last_edit_date": 1683869325,
+        "question_id": 76233109,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76233109/unable-to-run-mysql-v8-0-31-on-tomcat-9-0-74",
+        "title": "unable to run mysql v8.0.31 on tomcat 9.0.74"
+    },
+    {
+        "tags": [
+            "java",
+            "php",
+            "regex"
+        ],
+        "owner": {
+            "account_id": 10959205,
+            "reputation": 137,
+            "user_id": 8823436,
+            "user_type": "registered",
+            "profile_image": "https://www.gravatar.com/avatar/ea5e6b1689a17f657c562f41fa1430c1?s=256&d=identicon&r=PG&f=y&so-version=2",
+            "display_name": "Pradeepta Kumar Khatoi",
+            "link": "https://stackoverflow.com/users/8823436/pradeepta-kumar-khatoi"
+        },
+        "is_answered": false,
+        "view_count": 19,
+        "closed_date": 1683869613,
+        "answer_count": 0,
+        "score": -1,
+        "last_activity_date": 1683868784,
+        "creation_date": 1683868784,
+        "question_id": 76233337,
+        "link": "https://stackoverflow.com/questions/76233337/convert-php-function-preg-split-into-equivalent-java-code",
+        "closed_reason": "Needs more focus",
+        "title": "Convert PHP function **preg_split** into equivalent Java Code"
+    },
+    {
+        "tags": [
+            "java",
+            "multithreading",
+            "sockets"
+        ],
+        "owner": {
+            "account_id": 24693810,
+            "reputation": 35,
+            "user_id": 18586021,
+            "user_type": "registered",
+            "profile_image": "https://www.gravatar.com/avatar/1bf19ee6844bf8d62c17cdf422ecbdbb?s=256&d=identicon&r=PG",
+            "display_name": "Tony",
+            "link": "https://stackoverflow.com/users/18586021/tony"
+        },
+        "is_answered": false,
+        "view_count": 25,
+        "answer_count": 0,
+        "score": -1,
+        "last_activity_date": 1683868224,
+        "creation_date": 1683867748,
+        "last_edit_date": 1683868224,
+        "question_id": 76233264,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76233264/cant-update-the-jlabel-on-time-and-change-txt-by-settext-in-java",
+        "title": "Can&#39;t update the Jlabel on time and change txt by settext() in Java"
+    },
+    {
+        "tags": [
+            "java",
+            "bulkinsert",
+            "bulkupdate"
+        ],
+        "owner": {
+            "account_id": 18759440,
+            "reputation": 67,
+            "user_id": 13678707,
+            "user_type": "registered",
+            "profile_image": "https://lh3.googleusercontent.com/a-/AOh14Gi9dre_lVV59oN2sVBMmwDe1cEIc4kWJbos4PIj=k-s256",
+            "display_name": "choding",
+            "link": "https://stackoverflow.com/users/13678707/choding"
+        },
+        "is_answered": false,
+        "view_count": 18,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1683865752,
+        "creation_date": 1683865752,
+        "question_id": 76233126,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76233126/how-to-efficiently-process-large-amounts-of-data-in-transactional-attached-meth",
+        "title": "How to efficiently process large amounts of data in @Transactional-attached methods?"
+    },
+    {
+        "tags": [
+            "java",
+            "spring-boot",
+            "java-17"
+        ],
+        "owner": {
+            "account_id": 9787587,
+            "reputation": 15,
+            "user_id": 7253394,
+            "user_type": "registered",
+            "profile_image": "https://graph.facebook.com/375176919496347/picture?type=large",
+            "display_name": "Sam p",
+            "link": "https://stackoverflow.com/users/7253394/sam-p"
+        },
+        "is_answered": false,
+        "view_count": 13,
+        "closed_date": 1683885412,
+        "answer_count": 0,
+        "score": -3,
+        "last_activity_date": 1683865721,
+        "creation_date": 1683865721,
+        "question_id": 76233124,
+        "link": "https://stackoverflow.com/questions/76233124/error-class-interface-or-enum-expected-public-record-samplemanagernotblank",
+        "closed_reason": "Needs details or clarity",
+        "title": "error: class, interface, or enum expected public record SampleManager(@NotBlank @Size(max = 255) String name, @NotNull @Email String emailAddress) ^"
+    },
+    {
+        "tags": [
+            "python",
+            "java",
+            "spring-boot",
+            "architecture",
+            "software-design"
+        ],
+        "owner": {
+            "account_id": 1917319,
+            "reputation": 410,
+            "user_id": 1729649,
+            "user_type": "registered",
+            "profile_image": "https://www.gravatar.com/avatar/4f3aaba415aee060865c4b28e229a66e?s=256&d=identicon&r=PG",
+            "display_name": "Sukh",
+            "link": "https://stackoverflow.com/users/1729649/sukh"
+        },
+        "is_answered": false,
+        "view_count": 29,
+        "closed_date": 1683865331,
+        "answer_count": 0,
+        "score": -1,
+        "last_activity_date": 1683864861,
+        "creation_date": 1683864183,
+        "last_edit_date": 1683864861,
+        "question_id": 76233050,
+        "link": "https://stackoverflow.com/questions/76233050/what-is-the-best-software-design-approach-to-process-and-aggregate-multiple-file",
+        "closed_reason": "Needs more focus",
+        "title": "What is the best software design approach to process and aggregate multiple files simultaneously each with around 2 million record"
+    },
+    {
+        "tags": [
+            "java",
+            "arrays",
+            "binary-search"
+        ],
+        "owner": {
+            "account_id": 27684328,
+            "reputation": 17,
+            "user_id": 21132394,
+            "user_type": "registered",
+            "profile_image": "https://lh3.googleusercontent.com/a/AEdFTp7eYUK_TndG2RWmtcbW7b2knc_XyjLd4G_Vo4Yz=k-s256",
+            "display_name": "Bharath R",
+            "link": "https://stackoverflow.com/users/21132394/bharath-r"
+        },
+        "is_answered": false,
+        "view_count": 42,
+        "answer_count": 0,
+        "score": -1,
+        "last_activity_date": 1683864697,
+        "creation_date": 1683864697,
+        "question_id": 76233075,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76233075/finding-targeted-element-in-an-array-without-using-size-of-an-array",
+        "title": "Finding targeted element in an array without using size of an array"
+    },
+    {
+        "tags": [
+            "java",
+            "spring",
+            "spring-boot"
+        ],
+        "owner": {
+            "account_id": 20584607,
+            "reputation": 1,
+            "user_id": 16117353,
+            "user_type": "registered",
+            "profile_image": "https://i.stack.imgur.com/GprKn.jpg?s=256&g=1",
+            "display_name": "Gennady Jumbo",
+            "link": "https://stackoverflow.com/users/16117353/gennady-jumbo"
+        },
+        "is_answered": false,
+        "view_count": 41,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1683864501,
+        "creation_date": 1683859721,
+        "last_edit_date": 1683862794,
+        "question_id": 76232822,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76232822/how-to-specify-onetoone-relationship-in-spring-boot-project",
+        "title": "how to specify OneToOne relationship in spring boot project?"
+    },
+    {
+        "tags": [
+            "java",
+            "json",
+            "jackson",
+            "deserialization"
+        ],
+        "owner": {
+            "account_id": 2237989,
+            "reputation": 3115,
+            "user_id": 1973779,
+            "user_type": "registered",
+            "accept_rate": 27,
+            "profile_image": "https://i.stack.imgur.com/2pBNf.jpg?s=256&g=1",
+            "display_name": "Rahul Raj",
+            "link": "https://stackoverflow.com/users/1973779/rahul-raj"
+        },
+        "is_answered": true,
+        "view_count": 31,
+        "accepted_answer_id": 76232948,
+        "answer_count": 1,
+        "score": 1,
+        "last_activity_date": 1683863026,
+        "creation_date": 1683860643,
+        "last_edit_date": 1683860957,
+        "question_id": 76232864,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76232864/java-generics-not-working-with-jackson-serlializer",
+        "title": "Java Generics not working with Jackson Serlializer"
+    },
+    {
+        "tags": [
+            "python",
+            "java",
+            "character-encoding"
+        ],
+        "owner": {
+            "account_id": 4614611,
+            "reputation": 5991,
+            "user_id": 3741571,
+            "user_type": "registered",
+            "accept_rate": 2,
+            "profile_image": "https://i.stack.imgur.com/0WXuV.jpg?s=256&g=1",
+            "display_name": "chenzhongpu",
+            "link": "https://stackoverflow.com/users/3741571/chenzhongpu"
+        },
+        "is_answered": false,
+        "view_count": 44,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1683861716,
+        "creation_date": 1683861716,
+        "question_id": 76232910,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76232910/how-to-decode-bytes-in-gb18030-correctly",
+        "title": "How to decode bytes in GB18030 correctly"
+    },
+    {
+        "tags": [
+            "java",
+            "android"
+        ],
+        "owner": {
+            "account_id": 13199884,
+            "reputation": 1,
+            "user_id": 9533425,
+            "user_type": "registered",
+            "profile_image": "https://lh5.googleusercontent.com/-4PSXtsZAIS4/AAAAAAAAAAI/AAAAAAAAFbA/H5Tkuczajcg/photo.jpg?sz=256",
+            "display_name": "molige srinivas",
+            "link": "https://stackoverflow.com/users/9533425/molige-srinivas"
+        },
+        "is_answered": false,
+        "view_count": 22,
+        "closed_date": 1684168187,
+        "answer_count": 0,
+        "score": -1,
+        "last_activity_date": 1683861163,
+        "creation_date": 1683861163,
+        "question_id": 76232893,
+        "link": "https://stackoverflow.com/questions/76232893/how-to-control-device-sleep-mode-in-android-java",
+        "closed_reason": "Needs details or clarity",
+        "title": "How to control device sleep mode in android java"
+    },
+    {
+        "tags": [
+            "java",
+            "spring",
+            "spring-boot",
+            "jasper-reports",
+            "dynamic-jasper"
+        ],
+        "owner": {
+            "account_id": 24523438,
+            "reputation": 31,
+            "user_id": 18436153,
+            "user_type": "registered",
+            "profile_image": "https://i.stack.imgur.com/ikL8U.jpg?s=256&g=1",
+            "display_name": "PositiveM",
+            "link": "https://stackoverflow.com/users/18436153/positivem"
+        },
+        "is_answered": false,
+        "view_count": 28,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1683860959,
+        "creation_date": 1683860959,
+        "question_id": 76232879,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76232879/i-am-trying-to-add-pdf-font-within-jasper-report-in-dynamic-jasper-but-it-is-not",
+        "title": "I am trying to add pdf font within jasper report in dynamic jasper but it is not recognised"
+    },
+    {
+        "tags": [
+            "java",
+            "android",
+            "package",
+            "java-package"
+        ],
+        "owner": {
+            "account_id": 28585355,
+            "reputation": 1,
+            "user_id": 21885700,
+            "user_type": "registered",
+            "profile_image": "https://lh3.googleusercontent.com/a/AGNmyxZmphOYN4xCBeJXJl-9sViKKWQN9pTXD6U5TyTj=k-s256",
+            "display_name": "Iftad Abser",
+            "link": "https://stackoverflow.com/users/21885700/iftad-abser"
+        },
+        "is_answered": true,
+        "view_count": 56,
+        "closed_date": 1683952526,
+        "answer_count": 2,
+        "score": -3,
+        "last_activity_date": 1683860029,
+        "creation_date": 1683858528,
+        "last_edit_date": 1683860029,
+        "question_id": 76232761,
+        "link": "https://stackoverflow.com/questions/76232761/what-is-the-first-line-for-in-the-mainactivity-java",
+        "closed_reason": "Duplicate",
+        "title": "What is the first line for, in the MainActivity.java?"
+    },
+    {
+        "tags": [
+            "java",
+            "android",
+            "parcelable"
+        ],
+        "owner": {
+            "account_id": 25646873,
+            "reputation": 27,
+            "user_id": 19414831,
+            "user_type": "registered",
+            "profile_image": "https://lh3.googleusercontent.com/a/AATXAJxx34oSWMTuf-lidkRhwlLXtrpZkOCP0dwC1PP0=k-s256",
+            "display_name": "Caelles Kharida",
+            "link": "https://stackoverflow.com/users/19414831/caelles-kharida"
+        },
+        "is_answered": false,
+        "view_count": 12,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1683859379,
+        "creation_date": 1683859379,
+        "question_id": 76232812,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76232812/why-writeparcelable-and-readparcelable-messes-up-the-data-being-passed",
+        "title": "why writeParcelable and readParcelable messes up the data being passed?"
+    },
+    {
+        "tags": [
+            "java",
+            "collections",
+            "hashmap",
+            "garbage-collection"
+        ],
+        "owner": {
+            "account_id": 5342088,
+            "reputation": 33,
+            "user_id": 4258796,
+            "user_type": "registered",
+            "profile_image": "https://lh3.googleusercontent.com/-3MJXcnVfiWo/AAAAAAAAAAI/AAAAAAAAACs/y1gCo26zn-4/photo.jpg?sz=256",
+            "display_name": "Aditya",
+            "link": "https://stackoverflow.com/users/4258796/aditya"
+        },
+        "is_answered": false,
+        "view_count": 37,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1683856995,
+        "creation_date": 1683856995,
+        "question_id": 76232696,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76232696/update-operations-in-a-java-hashmap",
+        "title": "Update Operations in a java HashMap"
+    },
+    {
+        "tags": [
+            "java",
+            "date",
+            "simpledateformat",
+            "date-format"
+        ],
+        "owner": {
+            "account_id": 9015198,
+            "reputation": 131,
+            "user_id": 7552035,
+            "user_type": "registered",
+            "profile_image": "https://www.gravatar.com/avatar/7b62ca9e870d81de89f529b5cfb50641?s=256&d=identicon&r=PG&f=y&so-version=2",
+            "display_name": "Root93",
+            "link": "https://stackoverflow.com/users/7552035/root93"
+        },
+        "is_answered": false,
+        "view_count": 72,
+        "closed_date": 1683860408,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1683854611,
+        "creation_date": 1683852070,
+        "question_id": 76232447,
+        "link": "https://stackoverflow.com/questions/76232447/how-to-format-a-date-inside-a-string-with-java",
+        "closed_reason": "Duplicate",
+        "title": "How to format a date inside a String with Java?"
+    }
+]
