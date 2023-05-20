@@ -102,39 +102,55 @@ public class DataController {
     }
 
     @GetMapping("/FrequentlyCooccurringTags")
-    public ResponseEntity<Map<String, Integer>> getFrequentlyCooccurringTags() {
+    public ResponseEntity<List<Map<String, Object>>> getFrequentlyCooccurringTags() {
         JsonNode cooccurringTagsJsonNode = jsonNode.get("sorted_cooccurrence");
+        List<Map<String, Object>> result = new ArrayList<>();
         Map<String, Integer> cooccurringTags = new HashMap<String, Integer>();
         for (JsonNode element : cooccurringTagsJsonNode) {
             String key = element.get(0).toString().replace("\"", "");
             int value = element.get(1).asInt();
             cooccurringTags.put(key, value);
+            Map<String, Object> adder = new HashMap<>();
+            adder.put("value", value);
+            adder.put("name", key);
+            result.add(adder);
         }
-        return ResponseEntity.ok(cooccurringTags);
+        return ResponseEntity.ok(result);
     }
 
     @GetMapping("/MostUpvotedTags")
-    public ResponseEntity<Map<String, Integer>> getMostUpvotedTags() {
+    public ResponseEntity<List<Map<String, Object>>> getMostUpvotedTags() {
         JsonNode upvotedTagsJsonNode = jsonNode.get("sorted_upvotes");
         Map<String, Integer> upvotedTags = new HashMap<String, Integer>();
+        List<Map<String, Object>> result = new ArrayList<>();
         for (JsonNode element : upvotedTagsJsonNode) {
             String key = element.get(0).toString().replace("\"", "");
             int value = element.get(1).asInt();
             upvotedTags.put(key, value);
+            Map<String, Object> adder = new HashMap<>();
+            adder.put("value", value);
+            adder.put("name", key);
+            result.add(adder);
         }
-        return ResponseEntity.ok(upvotedTags);
+        return ResponseEntity.ok(result);
     }
 
     @GetMapping("/MostViewedTags")
-    public ResponseEntity<Map<String, Integer>> getMostViewedTags() {
+    public ResponseEntity<List<Map<String, Object>>> getMostViewedTags() {
         JsonNode viewedTagsJsonNode = jsonNode.get("sorted_views");
         Map<String, Integer> viewedTags = new HashMap<String, Integer>();
+        List<Map<String, Object>> result = new ArrayList<>();
         for (JsonNode element : viewedTagsJsonNode) {
             String key = element.get(0).toString().replace("\"", "");
             int value = element.get(1).asInt();
             viewedTags.put(key, value);
+            Map<String, Object> adder = new HashMap<>();
+            adder.put("value", value);
+            adder.put("name", key);
+            result.add(adder);
+//            System.out.println(adder);
         }
-        return ResponseEntity.ok(viewedTags);
+        return ResponseEntity.ok(result);
     }
 
     @GetMapping("/QuestionUserNumber") //参与问题的
