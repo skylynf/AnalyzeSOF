@@ -91,6 +91,16 @@ final_result['number_of_comment_users']
 
 **Addition:** Please mention, number of posts without user id, A pie chart can be made to indicate that some people have no ID or have cancelled their account.
 
+
+
+```python
+final_result['single_question_user_distribution']:list(tuple(x,y))
+```
+
+A thread has x responses and y comments, and the distribution of these two numbers is calculated through 800 threads
+
+
+
 ```python
 final_result['number_of_posts_without_user_id']
 

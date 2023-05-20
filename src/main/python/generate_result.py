@@ -259,19 +259,35 @@ with open('comments.json', 'r') as f:
 
 # Calculate the distribution of user participation in threads
 
-question_users = count_distinct_users(questions_data)
-answer_users = count_distinct_users(answers_data)
-comment_users = count_distinct_users(comments_data)
+total_question_users = count_distinct_users(questions_data)
+total_answer_users = count_distinct_users(answers_data)
+total_comment_users = count_distinct_users(comments_data)
+
+single_question_user_distribution = []
+
+for item in questions_data:
+    answer_users = []
+    comments_users = []
+    for answer in answers_data:
+        if answer['question_id'] == item['question_id']:
+            answer_users.append(answer['owner']['user_id'])
+    for comment in comments_data:
+        if comment['post_id'] == item['question_id']:
+            if 'user_id' in comment['owner']:
+                comments_users.append(comment['owner']['user_id'])
+    single_question_user_distribution.append((len(set(answer_users)), len(set(comments_users))))
+
+final_result['single_question_user_distribution'] = single_question_user_distribution
 
 
-print(f"Number of distinct users who posted questions: {question_users}")
-final_result['number_of_question_users'] = question_users
+print(f"Number of distinct users who posted questions: {total_question_users}")
+final_result['number_of_question_users'] = total_question_users
 
-print(f"Number of distinct users who posted answers: {answer_users}")
-final_result['number_of_answer_users'] = answer_users
+print(f"Number of distinct users who posted answers: {total_answer_users}")
+final_result['number_of_answer_users'] = total_answer_users
 
-print(f"Number of distinct users who posted comments: {comment_users}")
-final_result['number_of_comment_users'] = comment_users
+print(f"Number of distinct users who posted comments: {total_comment_users}")
+final_result['number_of_comment_users'] = total_comment_users
 
 # print not exist user count
 print(f"Number of posts without user id: {not_exist_user_count}")
@@ -283,7 +299,6 @@ most_active_users = get_most_active_users(questions_data + answers_data + commen
 # print total user count
 print(f"Total number of users: {total_user_count}")
 final_result['total_number_of_users'] = total_user_count
-
 final_result['most_active_users'] = {}
 # Print the most active users in thread discussions
 print("Most active users in thread discussions:")
