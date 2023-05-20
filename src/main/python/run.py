@@ -40,7 +40,7 @@ def analyze_questions():
             answers = get_answers(question_id)
             answer_count = len(answers['items'])
             answer_collections.extend(answers['items'])
-            print(f"Question {question_id} has {answer_count} answers")
+            print(f"collecting.Question {question_id} has {answer_count} answers")
 
             if answer_count == 0:
                 questions_without_answers += 1
