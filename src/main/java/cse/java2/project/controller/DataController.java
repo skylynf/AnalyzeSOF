@@ -8,6 +8,9 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -157,7 +160,9 @@ public class DataController {
 
     //TODO:catch bug
     @GetMapping("/SingleQuestionUserDistribution")
-    public ResponseEntity<List<List<Integer>>> getSingleQuestionUserDistribution() {
+    public ResponseEntity<List<List<Integer>>> getSingleQuestionUserDistribution(
+            @RequestParam(value = "num", required = false, defaultValue = "1000") int num
+    ) {
         JsonNode data = jsonNode.get("single_question_user_distribution");
         List<List<Integer>> singleQuestionUserDistribution = new ArrayList<>();
         for (JsonNode element : data) {
@@ -168,7 +173,8 @@ public class DataController {
             }
             singleQuestionUserDistribution.add(list);
         }
-        return ResponseEntity.ok(singleQuestionUserDistribution);
+        num = Math.min(num, singleQuestionUserDistribution.size());
+        return ResponseEntity.ok(singleQuestionUserDistribution.subList(0, num));
     }
 
     @GetMapping("/NumberOfPostsWithoutUserID")
@@ -193,7 +199,6 @@ public class DataController {
         return ResponseEntity.ok(mostActiveUsers);
     }
 
-    //TODO:catch bug
     @GetMapping("/FrequentlyDiscussedClasses")
     public ResponseEntity<Map<String, Integer>> getFrequentlyDiscussedClasses() {
         JsonNode frequentlyDiscussedClassesJsonNode = jsonNode.get("frequent_classes");
@@ -232,6 +237,17 @@ public class DataController {
     public ResponseEntity<JsonNode> getReputationAcceptanceRelation() {
         JsonNode reputationAcceptanceRelation = jsonNode.get("reputation_acceptance_relation");
         return ResponseEntity.ok(reputationAcceptanceRelation);
+    }
+
+    //RESTful API to get user's total score
+    @GetMapping("/UserTotalScore/{UserId}")
+    public ResponseEntity<Integer> getUserTotalScore(@PathVariable("UserId") int userId) {
+        JsonNode userJson = jsonNode.get("reputation_score_relation").get(String.valueOf(userId));
+        int score = 0;
+        for (JsonNode element : userJson) {
+            score = element.asInt();
+        }
+        return ResponseEntity.ok(score);
     }
 
 
