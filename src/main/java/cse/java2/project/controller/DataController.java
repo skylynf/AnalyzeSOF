@@ -199,8 +199,8 @@ public class DataController {
         JsonNode frequentlyDiscussedClassesJsonNode = jsonNode.get("frequent_classes");
         Map<String, Integer> frequentlyDiscussedClasses = new HashMap<>();
         for (JsonNode element : frequentlyDiscussedClassesJsonNode) {
-            String key = element.get(0).toString().replace("\"", "");
-            int value = element.get(1).asInt();
+            String key = element.get("name").asText();
+            int value = element.get("count").asInt();
             frequentlyDiscussedClasses.put(key, value);
         }
         return ResponseEntity.ok(frequentlyDiscussedClasses);
