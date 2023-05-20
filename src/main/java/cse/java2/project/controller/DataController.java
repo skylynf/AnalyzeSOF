@@ -77,24 +77,27 @@ public class DataController {
 
     @GetMapping("/AcceptedAnswersPercentage")
     public ResponseEntity<Double> getAcceptedAnswersPercentage() {
-        double percentage = jsonNode.get("accepted_answers_percentage").asDouble();
+        double percentage = jsonNode.get("percentage_have_accepted_answer").asDouble();
         return ResponseEntity.ok(percentage);
     }
 
     @GetMapping("/QuestionResolutionTimeDistribution")
     public ResponseEntity<List<Integer>> getQuestionResolutionTimeDistribution() {
-        JsonNode resolutionTimeDistributionNode = jsonNode.get("question_resolution_time_distribution");
+        JsonNode resolutionTimeDistributionNode = jsonNode.get("resolution_time_distribution");
         List<Integer> resolutionTimeDistribution = new ArrayList<Integer>();
+        int counter = 0;
         for (JsonNode element : resolutionTimeDistributionNode) {
             int value = element.asInt();
             resolutionTimeDistribution.add(value);
+            counter++;
         }
-        return ResponseEntity.ok(resolutionTimeDistribution);
+        System.out.println(counter);
+        return ResponseEntity.ok().body(resolutionTimeDistribution);
     }
 
     @GetMapping("/NonAcceptedAnswersUpvotesPercentage")
     public ResponseEntity<Double> getNonAcceptedAnswersUpvotesPercentage() {
-        double percentage = jsonNode.get("non_accepted_answers_upvotes_percentage").asDouble();
+        double percentage = jsonNode.get("percentage_better_than_accepted").asDouble();
         return ResponseEntity.ok(percentage);
     }
 
@@ -134,7 +137,7 @@ public class DataController {
         return ResponseEntity.ok(viewedTags);
     }
 
-    @GetMapping("/QuestionUserNumber")
+    @GetMapping("/QuestionUserNumber") //参与问题的
     public ResponseEntity<Integer> getQuestionUserDistribution() {
         int questionUserDistribution = jsonNode.get("number_of_question_users").asInt();
         return ResponseEntity.ok(questionUserDistribution);
@@ -152,6 +155,7 @@ public class DataController {
         return ResponseEntity.ok(commentUserNumber);
     }
 
+    //TODO:catch bug
     @GetMapping("/SingleQuestionUserDistribution")
     public ResponseEntity<List<List<Integer>>> getSingleQuestionUserDistribution() {
         JsonNode data = jsonNode.get("single_question_user_distribution");
@@ -189,6 +193,7 @@ public class DataController {
         return ResponseEntity.ok(mostActiveUsers);
     }
 
+    //TODO:catch bug
     @GetMapping("/FrequentlyDiscussedClasses")
     public ResponseEntity<Map<String, Integer>> getFrequentlyDiscussedClasses() {
         JsonNode frequentlyDiscussedClassesJsonNode = jsonNode.get("frequent_classes");
