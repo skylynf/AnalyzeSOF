@@ -216,29 +216,39 @@ public class DataController {
     }
 
     @GetMapping("/FrequentlyDiscussedClasses")
-    public ResponseEntity<Map<String, Integer>> getFrequentlyDiscussedClasses() {
+    public ResponseEntity<List<Map<String, Object>>> getFrequentlyDiscussedClasses() {
         JsonNode frequentlyDiscussedClassesJsonNode = jsonNode.get("frequent_classes");
         Map<String, Integer> frequentlyDiscussedClasses = new HashMap<>();
+        List<Map<String, Object>> result = new ArrayList<>();
         for (JsonNode element : frequentlyDiscussedClassesJsonNode) {
             String key = element.get("name").asText();
             int value = element.get("count").asInt();
             frequentlyDiscussedClasses.put(key, value);
+            Map<String, Object> adder = new HashMap<>();
+            adder.put("value", value);
+            adder.put("name", key);
+            result.add(adder);
         }
-        return ResponseEntity.ok(frequentlyDiscussedClasses);
+        return ResponseEntity.ok(result);
     }
 
     @GetMapping("/FrequentlyDiscussedMethods")
-    public ResponseEntity<Map<List<String>, Integer>> getFrequentlyDiscussedMethods() {
+    public ResponseEntity<List<Map<String, Object>>> getFrequentlyDiscussedMethods() {
         JsonNode frequentlyDiscussedMethodsJsonNode = jsonNode.get("frequent_methods");
         Map<List<String>, Integer> frequentlyDiscussedMethods = new HashMap<>();
+        List<Map<String, Object>> result = new ArrayList<>();
         for (JsonNode element : frequentlyDiscussedMethodsJsonNode) {
             List<String> key = new ArrayList<>();
             key.add(element.get("method").asText());
             key.add(element.get("class").asText());
             int value = element.get("count").asInt();
             frequentlyDiscussedMethods.put(key, value);
+            Map<String, Object> adder = new HashMap<>();
+            adder.put("value", value);
+            adder.put("name", key);
+            result.add(adder);
         }
-        return ResponseEntity.ok(frequentlyDiscussedMethods);
+        return ResponseEntity.ok(result);
     }
 
 
