@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.sql.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -174,7 +175,6 @@ public class DataController {
         return ResponseEntity.ok(commentUserNumber);
     }
 
-    //TODO:catch bug
     @GetMapping("/SingleQuestionUserDistribution")
     public ResponseEntity<List<List<Integer>>> getSingleQuestionUserDistribution(
             @RequestParam(value = "num", required = false, defaultValue = "1000") int num
@@ -191,6 +191,51 @@ public class DataController {
         }
         num = Math.min(num, singleQuestionUserDistribution.size());
         return ResponseEntity.ok(singleQuestionUserDistribution.subList(0, num));
+    }
+
+    @GetMapping("/SingleQuestionUserDistributionGraph")
+    public ResponseEntity<List<List<Object>>> getSingleQuestionUserDistributionGraph() {
+        JsonNode data = jsonNode.get("single_question_user_distribution");
+        List<List<Object>> singleQuestionUserDistribution = new ArrayList<>();
+        int[] countList = new int[5];
+
+        for (JsonNode element : data) {
+
+            float rate;
+            if(element.get(0).asInt()+element.get(1).asInt() == 0){
+                continue;
+            }
+            rate = (float)element.get(0).asInt()/(element.get(0).asInt()+element.get(1).asInt());
+
+            if(rate == 0){
+                countList[0] = countList[0] + 1;
+            }else if(rate == 1){
+                countList[4] = countList[4] + 1;
+            }else if(rate == 0.5) {
+                countList[2] = countList[2] + 1;
+            }else if(rate <0.5) {
+                countList[1] = countList[1] + 1;
+            }else if(rate > 0.5){
+                countList[3] = countList[3] + 1;
+            }
+        }
+        for(int i = 0; i < 5; i++){
+            List<Object> list = new ArrayList<>();
+            if(i==0){
+                list.add("Only Comment");
+            }else if(i==1){
+                list.add("<0.5");
+            }else if(i==2){
+                list.add("0.5");
+            }else if(i==3){
+                list.add(">0.5");
+            }else{
+                list.add("Only Answer");
+            }
+            list.add(countList[i]);
+            singleQuestionUserDistribution.add(list);
+        }
+        return ResponseEntity.ok(singleQuestionUserDistribution);
     }
 
     @GetMapping("/NumberOfPostsWithoutUserID")

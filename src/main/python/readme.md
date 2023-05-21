@@ -104,7 +104,7 @@ A thread has x responses and y comments, and the distribution of these two numbe
 ```python
 final_result['number_of_posts_without_user_id']
 
-final_result['total_number_of_users']
+final_result['total_number_of_users'
 ```
 
 Which are the most active users who frequently participate in thread discussions?
