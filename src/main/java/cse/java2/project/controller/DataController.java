@@ -86,17 +86,57 @@ public class DataController {
     }
 
     @GetMapping("/QuestionResolutionTimeDistribution")
-    public ResponseEntity<List<Integer>> getQuestionResolutionTimeDistribution() {
+    public ResponseEntity<List<List<Object>>> getQuestionResolutionTimeDistribution() {
         JsonNode resolutionTimeDistributionNode = jsonNode.get("resolution_time_distribution");
-        List<Integer> resolutionTimeDistribution = new ArrayList<Integer>();
-        int counter = 0;
+        List<Integer> resolutionTimeDistribution = new ArrayList<>();
         for (JsonNode element : resolutionTimeDistributionNode) {
             int value = element.asInt();
             resolutionTimeDistribution.add(value);
-            counter++;
         }
-        System.out.println(counter);
-        return ResponseEntity.ok().body(resolutionTimeDistribution);
+        // sort the list from small to big
+        resolutionTimeDistribution.sort(Integer::compareTo);
+        int max = resolutionTimeDistribution.get(resolutionTimeDistribution.size() - 1);
+        int[] standard = {60, 120, 180, 360, 900, 1800, 3600, 7200, 10800, 21600, 43200, 86400, 172800, 345600, 604800, 1209600, 2419200, max};
+        List<String> standardList = new ArrayList<>();
+        standardList.add("1min");
+        standardList.add("2min");
+        standardList.add("3min");
+        standardList.add("6min");
+        standardList.add("15min");
+        standardList.add("30min");
+        standardList.add("1h");
+        standardList.add("2h");
+        standardList.add("3h");
+        standardList.add("6h");
+        standardList.add("12h");
+        standardList.add("1d");
+        standardList.add("2d");
+        standardList.add("4d");
+        standardList.add("1w");
+        standardList.add("2w");
+        standardList.add("4w");
+        standardList.add("4w+");
+
+        int[] count = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+        int now = 0;
+        for (Integer integer : resolutionTimeDistribution) {
+            if (integer > standard[now]) {
+                while (integer > standard[now]){
+                    now++;
+                }
+                count[now]++;
+            }else
+                count[now]++;
+        }
+        List<List<Object>> returnList = new ArrayList<>();
+        for(int i = 0; i < standard.length; i++) {
+            List<Object> adder = new ArrayList<>();
+            adder.add(standardList.get(i));
+            adder.add(count[i]);
+            returnList.add(adder);
+        }
+
+        return ResponseEntity.ok().body(returnList);
     }
 
     @GetMapping("/NonAcceptedAnswersUpvotesPercentage")
