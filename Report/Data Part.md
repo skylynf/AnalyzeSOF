@@ -1,10 +1,6 @@
 # Datapart
 
-
-
 ## Data collecting
-
-
 
 ### `RunQandA.java`  and `RunComment.java`
 
