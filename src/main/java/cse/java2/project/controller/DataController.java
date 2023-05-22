@@ -28,6 +28,7 @@ public class DataController {
     // 使用Jackson库解析JSON数据
     ObjectMapper objectMapper = new ObjectMapper();
     JsonNode jsonNode = objectMapper.readTree(fileBytes);
+
     public DataController() throws IOException {
     }
 
@@ -46,9 +47,11 @@ public class DataController {
     /**
      * This method is called when the user requests the JSON file ("/result").
      * It reads the JSON file from the local filesystem and sends it as a response.
+     *
      * @return the JSON file as a response entity
      * @throws IOException if there is an error reading the file
      */
+
     @GetMapping("/result")
     // 前端爆栈
     public ResponseEntity<byte[]> getFile() throws IOException {
@@ -63,16 +66,19 @@ public class DataController {
         double percentageWithoutAnswers = jsonNode.get("percentage_without_answers").asDouble();
         return ResponseEntity.ok(percentageWithoutAnswers);
     }
+
     @GetMapping("/AverageAnswers")
     public ResponseEntity<Double> getAverageAnswers() throws IOException {
         double averageAnswers = jsonNode.get("average_answers").asDouble();
         return ResponseEntity.ok(averageAnswers);
     }
+
     @GetMapping("/MaxAnswers")
     public ResponseEntity<Integer> getMaxAnswers() throws IOException {
         Integer maxAnswers = jsonNode.get("max_answers").asInt();
         return ResponseEntity.ok(maxAnswers);
     }
+
     @GetMapping("/AnswerDistribution")
     public ResponseEntity<JsonNode> getAnswerDistribution() throws IOException {
         JsonNode answerDistributionNode = jsonNode.get("answer_distribution");
@@ -125,11 +131,12 @@ public class DataController {
                     now++;
                 }
                 count[now]++;
-            }else
+            } else {
                 count[now]++;
+            }
         }
         List<List<Object>> returnList = new ArrayList<>();
-        for(int i = 0; i < standard.length; i++) {
+        for (int i = 0; i < standard.length; i++) {
             List<Object> adder = new ArrayList<>();
             adder.add(standardList.get(i));
             adder.add(count[i]);
@@ -242,34 +249,34 @@ public class DataController {
         for (JsonNode element : data) {
 
             float rate;
-            if(element.get(0).asInt()+element.get(1).asInt() == 0){
+            if (element.get(0).asInt() + element.get(1).asInt() == 0){
                 continue;
             }
-            rate = (float)element.get(0).asInt()/(element.get(0).asInt()+element.get(1).asInt());
+            rate = (float) element.get(0).asInt() / (element.get(0).asInt() + element.get(1).asInt());
 
-            if(rate == 0){
+            if (rate == 0){
                 countList[0] = countList[0] + 1;
-            }else if(rate == 1){
+            } else if (rate == 1){
                 countList[4] = countList[4] + 1;
-            }else if(rate == 0.5) {
+            } else if (rate == 0.5) {
                 countList[2] = countList[2] + 1;
-            }else if(rate <0.5) {
+            } else if (rate < 0.5) {
                 countList[1] = countList[1] + 1;
-            }else if(rate > 0.5){
+            } else if (rate > 0.5){
                 countList[3] = countList[3] + 1;
             }
         }
-        for(int i = 0; i < 5; i++){
+        for (int i = 0; i < 5; i++){
             List<Object> list = new ArrayList<>();
-            if(i==0){
+            if (i == 0){
                 list.add("Only Comment");
-            }else if(i==1){
+            } else if (i == 1){
                 list.add("<0.5");
-            }else if(i==2){
+            } else if (i == 2){
                 list.add("0.5");
-            }else if(i==3){
+            } else if (i == 3){
                 list.add(">0.5");
-            }else{
+            } else {
                 list.add("Only Answer");
             }
             list.add(countList[i]);
