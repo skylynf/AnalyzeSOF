@@ -10,11 +10,9 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -102,7 +100,9 @@ public class DataController {
         // sort the list from small to big
         resolutionTimeDistribution.sort(Integer::compareTo);
         int max = resolutionTimeDistribution.get(resolutionTimeDistribution.size() - 1);
-        int[] standard = {60, 120, 180, 360, 900, 1800, 3600, 7200, 10800, 21600, 43200, 86400, 172800, 345600, 604800, 1209600, 2419200, max};
+        int[] standard = {60, 120, 180, 360, 900, 1800, 3600, 7200,
+                10800, 21600, 43200, 86400, 172800, 345600, 604800,
+                1209600, 2419200, max};
         List<String> standardList = new ArrayList<>();
         standardList.add("1min");
         standardList.add("2min");
@@ -123,7 +123,7 @@ public class DataController {
         standardList.add("4w");
         standardList.add("4w+");
 
-        int[] count = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+        int[] count = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
         int now = 0;
         for (Integer integer : resolutionTimeDistribution) {
             if (integer > standard[now]) {
